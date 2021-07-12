@@ -6,26 +6,22 @@
 }
 
 .logo {
-  width: 30vw;
+  width: 45vw;
   margin: 2vw 0 2vw 0;
-  max-width: 120px;
+  max-width: 140px;
   border-radius: 50%;
   box-shadow: 10px 8px 10px pink;
-  margin-top: 0;
+  margin-bottom: 2vh;
 }
 
 .carousel{
 	justify-content: center;
-	min-height: 40vh;
-
+	width: 40vw;
 }
 
 .slide img {;
   border-radius: 10px;
   object-fit: scale-down;
-  height: 40vh;
-  width: 100%;
-
 }
 
 .mainContainer{
@@ -46,8 +42,8 @@
 }
 
 .botones img{
-	width: 95vw;
-	max-width: 45px;
+	width: 70vw;
+	max-width: 60px;
 
 }
 
@@ -63,7 +59,9 @@ body{
 	margin-right: 4vw;
 }
 
-.text{
-
-
+@media screen and (min-width: 1px) and (max-width: 1000px){
+	.carousel{
+		width: 100vw;
+	}
 }
+
