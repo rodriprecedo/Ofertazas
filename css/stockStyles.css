@@ -1,0 +1,78 @@
+@import "vars.css";
+
+*{
+}
+
+body{
+	background: var(--background-color);
+}
+
+.logo {
+  width: 45vw;
+  max-width: 140px;
+  border-radius: 50%;
+  box-shadow: 10px 8px 10px pink;
+  margin-bottom: 2vh;
+}
+
+.mainContainer{
+	margin-top: 2vh;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+}
+
+.botones{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.botones img{
+	width: 70vw;
+	max-width: 60px;
+
+}
+
+.btn{
+	background-color:transparent;
+	margin-top: 2vw;
+	margin-left: 4vw;
+	margin-right: 4vw;
+}
+
+.btn:hover{
+	transform: var(--transform);
+	box-shadow: var(--box-shadow);
+	background-color: var(--background-color)!important;
+}
+
+.productos{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 5vw;
+	align-items: start;
+	justify-content: center;
+}
+
+.card{
+	margin: 2vw;
+	background-color: #fa6e85!important; 
+	color: white;
+	transition: all 0.10s;
+}
+
+.card:hover{
+	transform: var(--transform);
+	box-shadow: var(--box-shadow);
+	background-color: var(--background-color)!important;
+}
+
+.card-text{
+	margin: 0;
+}

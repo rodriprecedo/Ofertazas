@@ -1,24 +1,56 @@
+@import "vars.css";
+
+
 *{
 	padding: 0;
 	margin: 0;
 
 }
 
-#logo{
-	width: 16vw;
-	margin: 3vw 0 2vw 3vw;
 
+.logo {
+  width: 45vw;
+  max-width: 140px;
+  border-radius: 50%;
+  box-shadow: 10px 8px 10px pink;
+  margin-bottom: 2vh;
+}
+
+.mainContainer{
+	margin-top: 2vh;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+}
+
+.botones{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 
 }
 
-#instagram{
-	display: inline-block;
-	float: right;
-	width: 14vw;
-	margin: 4vw 2vw 4vw 0;
+.botones img{
+	width: 70vw;
+	max-width: 60px;
 
 }
 
+.btn{
+	background-color:transparent;
+	margin-top: 2vw;
+	margin-left: 4vw;
+	margin-right: 4vw;
+}
+
+.btn:hover{
+	transform: var(--transform);
+	box-shadow: var(--box-shadow);
+	background-color: var(--background-color)!important;
+}
 
 h1{
 	font-size: 5.5vw;
@@ -32,47 +64,13 @@ h1{
 }
 
 
-#menu{
-	font-size: 2vw;
-	text-align: center;
-	text-decoration: none;
-	border-bottom: 1px solid white;
-	margin: auto;
-	max-width: 90%;
-
-  }
-
- ul{
-
- 	font-family: 'Raleway', sans-serif;
- 	display: inline-block;
-	padding: 5px; 
-	margin-left: 8vw;
-  	list-style: none;
-
- 
-  }
-
-  ul li{
-  	float: left;
-  	background-color: #ea3e5c;
-  	border-radius: 8px;
-  	color: white;
-  	margin-left: 2vw;
-  	padding: 1vw;
-  }
-
-   ul li:hover{
- 	background: violet;
- }
-
   a{
 	text-decoration: none;
 	color: white;
 }
 
 body{
-	background: linear-gradient(to right, #C6FFDD, #FBD786, #f7797d);
+	background: var(--background-color);
 }
 
 .whatsappFixed{
