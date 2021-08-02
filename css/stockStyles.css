@@ -48,7 +48,8 @@ body{
 .btn:hover{
 	transform: var(--transform);
 	box-shadow: var(--box-shadow);
-	background-color: var(--background-color)!important;
+	background-color: var(--background-color-btn);
+	color: white!important;
 }
 
 .productos{
@@ -65,14 +66,19 @@ body{
 	background-color: #fa6e85!important; 
 	color: white;
 	transition: all 0.10s;
+	width: 21rem;
 }
 
 .card:hover{
 	transform: var(--transform);
 	box-shadow: var(--box-shadow);
-	background-color: var(--background-color)!important;
+	background-color: var(--background-color-btn)!important;
 }
 
 .card-text{
 	margin: 0;
+}
+
+.vendido{
+	filter: grayscale(90%);
 }

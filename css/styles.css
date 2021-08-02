@@ -45,7 +45,8 @@
 .btn:hover{
 	transform: var(--transform);
 	box-shadow: var(--box-shadow);
-	background-color: var(--background-color)!important;
+	background-color: var(--background-color-btn);
+	color: white!important;
 }
 
 .botones img{
@@ -71,4 +72,3 @@ body{
 		width: 100vw;
 	}
 }
-

@@ -10,7 +10,7 @@
 
 .logo {
   width: 45vw;
-  max-width: 140px;
+  max-width: 110px;
   border-radius: 50%;
   box-shadow: 10px 8px 10px pink;
   margin-bottom: 2vh;
@@ -30,12 +30,13 @@
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	max-width: 110px;
 
 }
 
 .botones img{
 	width: 70vw;
-	max-width: 60px;
+	max-width: 50px;
 
 }
 
@@ -49,7 +50,8 @@
 .btn:hover{
 	transform: var(--transform);
 	box-shadow: var(--box-shadow);
-	background-color: var(--background-color)!important;
+	background-color: var(--background-color-btn);
+	color: white!important;
 }
 
 h1{
@@ -74,7 +76,7 @@ body{
 }
 
 .whatsappFixed{
-	height: 9vw;
+	height: 8vw;
 	position: fixed;
 	bottom: 8%;
 	right: 7%;
@@ -83,70 +85,22 @@ body{
 	min-height: 10%;
 }
 
-.grid-container{
-	background: rgba(255,0,0,0.2);
-	border-radius: 10px;
-	display: grid;
-	height: 60vh;
-	width: 90%;
-	border: 2px solid white;
-	margin: auto;
-	text-align: center;
-	grid-template-columns: 60% 40%;
-	grid-template-rows: 50% 50%;
-	grid-template-areas: 
-	"mapa zona"
-	"mapa zona"
-}
-
-.grid-container div{
-	color: white;
+.container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 
 }
 
 .mapa{
-	grid-area: mapa;
-	align-self: center;
-
-	
+	height: 60vw;
+	border-radius: 10px;
 }
 
-.zona{
-	grid-area: zona;
-	align-self: center;
-}
-
-
-.mapaImagen{
-	width: 50vw;
-	border-radius: 4px;
-
-	
-}
-
-
-.grid-container p{
-	display: block;
-	font-family: 'Raleway', sans-serif;
-	font-size: 3vw; 
-
-}
-
-@media only screen and (min-width: 710px){
-	.mapaImagen{ 
-		width: 25vw;
-		
+@media screen and (min-width: 1px) and (max-width: 1000px){
+	.mapa{
+		height: 60vh;
 	}
-
-	.grid-container p{
-		font-size: 2.5vw;
-	}
-
-	h1{
-		font-size: 5vw;
-	}
-	
 }
-
-
 
